@@ -15,7 +15,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Tree
-      run: tree ..
+      run: tree ../..
     - name: Install ReflectionLib locally
       run: mvn install:install-file -Dfile=lib/ReflectionHelper_V1.18.12-SNAPSHOT.jar -DpomFile=lib/ReflectionHelper-pom.xml
     - name: Build with Maven
