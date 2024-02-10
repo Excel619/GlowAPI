@@ -6,7 +6,7 @@
 
     <groupId>org.inventivetalent</groupId>
     <artifactId>glowapi</artifactId>
-    <version>1.5.7-SNAPSHOT</version>
+    <version>1.5.7-SNAPSHOT-RR</version>
     <name>GlowAPI</name>
 
     <properties>
@@ -96,17 +96,14 @@
         <dependency>
             <groupId>org.inventivetalent.packetlistenerapi</groupId>
             <artifactId>api</artifactId>
-            <version>3.9.9-SNAPSHOT</version>
+            <version>3.9.10-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.inventivetalent</groupId>
             <artifactId>reflectionhelper</artifactId>
-            <version>1.18.11-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.bstats</groupId>
-            <artifactId>bstats-bukkit-lite</artifactId>
-            <version>1.7</version>
+            <version>1.18.12-SNAPSHOT</version>
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/lib/ReflectionHelper_v1.18.12-SNAPSHOT.jar</systemPath>-->
         </dependency>
     </dependencies>
 

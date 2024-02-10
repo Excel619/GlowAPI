@@ -1,6 +1,5 @@
 package org.inventivetalent.glow;
 
-import org.bstats.bukkit.MetricsLite;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -29,8 +28,6 @@ public class GlowPlugin extends JavaPlugin {
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(glowAPI, this);
         PacketListenerAPI.addPacketHandler(glowAPI);
-
-        new MetricsLite(this, 2190);
     }
 
     @Override
