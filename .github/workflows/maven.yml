@@ -14,6 +14,8 @@ jobs:
         java-version: 17
         distribution: 'temurin'
         cache: maven
+    - name: Install ReflectionLib locally
+      run: mvn install:install-file -Dfile=lib/ReflectionHelper_V1.18.12-SNAPSHOT.jar -DpomFile=lib/ReflectionHelper-pom.xml
     - name: Build with Maven
       run: mvn install
     - name: Upload Artifact to GitHub Action
