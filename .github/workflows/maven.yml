@@ -16,6 +16,10 @@ jobs:
         cache: maven
     - name: Tree
       run: tree ../..
+    - name: List
+      run: ls
+    - name: PWD
+      run: pwd
     - name: Install ReflectionLib locally
       run: mvn install:install-file -Dfile=lib/ReflectionHelper_V1.18.12-SNAPSHOT.jar -DpomFile=lib/ReflectionHelper-pom.xml
     - name: Build with Maven
