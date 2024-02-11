@@ -14,20 +14,12 @@ jobs:
         java-version: 17
         distribution: 'temurin'
         cache: maven
-#    - name: Tree
-#      run: tree ../..
-#    - name: Chmod test
-#      run: chmod +x lib/ReflectionHelper_v1.18.12-SNAPSHOT.jar
-#    - name: List
-#      run: ls
-#    - name: PWD
-#      run: pwd
     - name: Install ReflectionLib locally
       run: mvn install:install-file -Dfile=lib/ReflectionHelper_v1.18.12-SNAPSHOT.jar -DpomFile=lib/ReflectionHelper-pom.xml
     - name: Build with Maven
       run: mvn install
     - name: Upload Artifact to GitHub Action
       uses: actions/upload-artifact@v3
-      with: 
+      with:
         name: GlowAPI
         path: target/GlowAPI*.jar
