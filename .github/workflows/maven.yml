@@ -16,6 +16,8 @@ jobs:
         cache: maven
     - name: Tree
       run: tree ../..
+    - name: Chmod test
+      run: chmod +x lib/ReflectionHelper_V1.18.12-SNAPSHOT.jar
     - name: List
       run: ls
     - name: PWD
